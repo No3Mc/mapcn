@@ -19,6 +19,7 @@ import { docsNavigation } from "@/lib/docs-navigation";
 
 export function DocsSidebar() {
   const pathname = usePathname();
+  // Todo
   const { setOpenMobile } = useSidebar();
 
   return (
@@ -32,7 +33,7 @@ export function DocsSidebar() {
     >
       <SidebarContent className="pt-8 no-scrollbar overflow-x-hidden">
         {docsNavigation.map((group) => (
-          <SidebarGroup key={group.title} className="px-0">
+          <SidebarGroup key={group.title} className="px-1">
             <SidebarGroupLabel className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground/70">
               {group.title}
             </SidebarGroupLabel>
